@@ -1,0 +1,64 @@
+﻿title: GoLabs 기술 블로그
+email: golabs.corp@google.com
+description: |
+  새로운 기술, 인공지능!!
+  Gost를 사용해보세요.
+baseurl: ''
+url: 'http://golabs7.github.io'
+timezone: Asia/Seoul
+
+repository: golabs7/golabs7.github.io
+
+future : true
+
+permalink: /:year/:month/:day/:title/
+
+excerpt_separator: <!--more-->
+
+markdown: kramdown
+
+krandown:
+  input: GFM
+  highlighter: rouge
+
+plugins:
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: '/page/:num/'
+
+collections:
+  authors:
+    output: true
+    permalink: /authors/:path/
+  tags:
+    output: true
+    permalink: /tags/:path/
+
+defaults:
+  - scope:
+      path: ''
+      type: authors
+    values:
+      layout: author
+  - scope:
+      path: ''
+      type: tags
+    values:
+      layout: tag
+
+exclude: [README.md, Gemfile, Gemfile.lock]
+
+keep_files: [assets, files]
+github: [metadata]
+
+author: golabs.corp@google.com
+image: '/assets/images/default_blog_cover.png'
+asset_url: /assets
+#google_analytics:
+#  ua: 'UA-1212521-13'
+#facebook:
+#  app_id: '1204347326263800'
+#  username: inswave
+github_url:
+  username: golabs7
