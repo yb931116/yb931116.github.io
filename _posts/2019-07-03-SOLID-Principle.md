@@ -1,6 +1,7 @@
 ---
 title: SOLID
 date: 2019-06-28 11:15:23
+author: Ho9
 tags:
 - SOLID
 - web-development
